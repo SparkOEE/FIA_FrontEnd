@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       // Proxy API requests to the backend
-      '/spark': 'http://localhost:3000',  // This should be the URL of your backend API
+      '/spark': 'https://oee.onrender.com',  // This should be the URL of your backend API
     },
   },
 })
