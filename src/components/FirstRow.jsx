@@ -11,7 +11,7 @@ function FirstRow() {
     const fetchData = async () => {
       try {
         // Fetch OEE data
-        const responseOee = await fetch(`http://localhost:3000/api/data`);
+        const responseOee = await fetch(`https://oee.onrender.com/api/data`);
         if (!responseOee.ok) {
           throw new Error(`Failed to fetch OEE data: ${responseOee.statusText}`);
         }
@@ -27,7 +27,7 @@ function FirstRow() {
         });
 
         // Fetch latest part data
-        const responsePart = await fetch('http://localhost:3000/api/parts/latest');
+        const responsePart = await fetch('https://oee.onrender.com/api/parts/latest');
         if (!responsePart.ok) {
           throw new Error(`Failed to fetch part data: ${responsePart.statusText}`);
         }
