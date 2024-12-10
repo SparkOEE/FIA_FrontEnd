@@ -145,7 +145,7 @@ function CycleTimeDetails() {
     };
   
     try {
-      const response = await fetch('/spark/machine/oee', {
+      const response = await fetch('https://oee.onrender.com/spark/machine/oee', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -195,7 +195,7 @@ function CycleTimeDetails() {
   
     // Make a PATCH request to the backend
     try {
-      const response = await fetch('/spark/machine/cycletime', {
+      const response = await fetch('https://oee.onrender.com/spark/machine/cycletime', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -337,7 +337,7 @@ function CycleTimeDetails() {
     setIsUpdating(true); // Show loading state
   
     try {
-      const response = await fetch('/spark/machine/target', {
+      const response = await fetch('https://oee.onrender.com/spark/machine/target', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -415,7 +415,7 @@ function CycleTimeDetails() {
     setIsUpdating(true); // Show loading state
   
     try {
-      const response = await fetch('/spark/oee/generate-report', {
+      const response = await fetch('https://oee.onrender.com/spark/oee/generate-report', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
