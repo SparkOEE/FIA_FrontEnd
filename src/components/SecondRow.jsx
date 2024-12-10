@@ -35,7 +35,7 @@ function SecondRow() {
     // Function to fetch part comparison data
     const fetchPartData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/parts/comparison');
+        const response = await fetch('https://oee.onrender.com/api/parts/comparison');
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.statusText}`);
         }
@@ -57,7 +57,7 @@ function SecondRow() {
     // Function to fetch actual and planned counts
     const fetchCounts = async () => {
       try {
-        const responseCounts = await fetch('http://localhost:3000/api/machine/counts');
+        const responseCounts = await fetch('https://oee.onrender.com/api/machine/counts');
         const counts = await responseCounts.json();
   
         if (responseCounts.ok) {
@@ -74,7 +74,7 @@ function SecondRow() {
     };
 
     const fetchOeeData = async () => {
-      const response = await fetch('http://localhost:3000/api/oee/last-ten');
+      const response = await fetch('https://oee.onrender.com/api/oee/last-ten');
       if (response.ok) {
         const data = await response.json();
         setOeeData(data);
