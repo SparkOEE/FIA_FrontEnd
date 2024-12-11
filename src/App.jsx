@@ -39,9 +39,9 @@ function App() {
               <div className="mt-2">
                 <SecondRow />
               </div>
-              <div className="mt-2">
+              {/* <div className="mt-2">
                 <RunningTimeChart />
-              </div>
+              </div> */}
             </>
           } />
           <Route path="/login" element={<LoginPage />} />
